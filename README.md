@@ -7,11 +7,11 @@ https://www.youtube.com/watch?v=kN1Czs0m1SU&t=2311s
 npm init
 npm install --save electorn
 
-CHANGE    
+------------------------------------------------------------CHANGE-----------------------------------------------------  
 "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-TO  
+------------------------------------------------------------TO------------------------------------------------------------
 "scripts": {
     "start": "electron ."
 },

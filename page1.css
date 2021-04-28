@@ -1,0 +1,27 @@
+html {
+    background-color: aqua;
+}
+
+.element_number {
+    font-size: 12px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+.element_letter {
+    font-size: 48px;
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+.element_name {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+.element_weight {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}

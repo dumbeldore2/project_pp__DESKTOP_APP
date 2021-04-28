@@ -1,5 +1,5 @@
 html {
-    background-color: aqua;
+    background: linear-gradient(116.82deg, #00BF8F 0%, rgba(0, 21, 16, 0) 100%);
 }
 
 .element_number {
@@ -24,4 +24,12 @@ html {
     text-align: center;
     margin-top: 0%;
     margin-bottom: 0%;
+}
+
+.element_box {
+    border-style: solid;
+    width: 80px;
+    height: 100px;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(#00BF8F, #001510);
 }

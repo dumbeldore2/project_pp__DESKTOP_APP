@@ -540,4 +540,8 @@ html {
     grid-column: 3/13;
     grid-row: 1/4;
     font-size: 96px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
 }

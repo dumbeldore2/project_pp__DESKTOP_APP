@@ -498,3 +498,37 @@ html {
     grid-column: 10;
     grid-row: 7;
 }
+
+/*dit zijn de 9de tien elementen */
+.grid_item111{
+    grid-column: 11;
+    grid-row: 7;
+}
+.grid_item112{
+    grid-column: 12;
+    grid-row: 7;
+}
+.grid_item113{
+    grid-column: 13;
+    grid-row: 7;
+}
+.grid_item114{
+    grid-column: 14;
+    grid-row: 7;
+}
+.grid_item115{
+    grid-column: 15;
+    grid-row: 7;
+}
+.grid_item116{
+    grid-column: 16;
+    grid-row: 7;
+}
+.grid_item117{
+    grid-column: 17;
+    grid-row: 7;
+}
+.grid_item118{
+    grid-column: 18;
+    grid-row: 7;
+}

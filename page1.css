@@ -162,3 +162,45 @@ html {
     grid-column: 12;
     grid-row: 4;
 }
+
+/*dit zijn de 4de tien elementen */
+.grid_item31{
+    grid-column: 13;
+    grid-row: 4;
+}
+.grid_item32{
+    grid-column: 14;
+    grid-row: 4;
+}
+.grid_item33{
+    grid-column: 15;
+    grid-row: 4;
+}
+.grid_item34{
+    grid-column: 16;
+    grid-row: 4;
+}
+.grid_item35{
+    grid-column: 17;
+    grid-row: 4;
+}
+.grid_item36{
+    grid-column: 18;
+    grid-row: 4;
+}
+.grid_item37{
+    grid-column: 1;
+    grid-row: 5;
+}
+.grid_item38{
+    grid-column: 2;
+    grid-row: 5;
+}
+.grid_item39{
+    grid-column: 3;
+    grid-row: 5;
+}
+.grid_item40{
+    grid-column: 4;
+    grid-row: 5;
+}

@@ -246,3 +246,45 @@ html {
     grid-column: 14;
     grid-row: 5;
 }
+
+/*dit zijn de 6de tien elementen */
+.grid_item51{
+    grid-column: 15;
+    grid-row: 5;
+}
+.grid_item52{
+    grid-column: 16;
+    grid-row: 5;
+}
+.grid_item53{
+    grid-column: 17;
+    grid-row: 5;
+}
+.grid_item54{
+    grid-column: 18;
+    grid-row: 5;
+}
+.grid_item55{
+    grid-column: 1;
+    grid-row: 6;
+}
+.grid_item56{
+    grid-column: 2;
+    grid-row: 6;
+}
+.grid_item57{
+    grid-column: 3;
+    grid-row: 9;
+}
+.grid_item58{
+    grid-column: 4;
+    grid-row: 9;
+}
+.grid_item59{
+    grid-column: 5;
+    grid-row: 9;
+}
+.grid_item60{
+    grid-column: 6;
+    grid-row: 9;
+}

@@ -37,6 +37,9 @@ html {
 
 .grid-container {
     display: inline-grid;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
 }
 
 .grid_item1{
@@ -458,7 +461,7 @@ html {
     grid-row: 10;
 }
 
-/*dit zijn de 9de tien elementen */
+/*dit zijn de 10de tien elementen */
 .grid_item101{
     grid-column: 15;
     grid-row: 10;
@@ -500,7 +503,7 @@ html {
     grid-row: 7;
 }
 
-/*dit zijn de 9de tien elementen */
+/*dit zijn de laatste elementen */
 .grid_item111{
     grid-column: 11;
     grid-row: 7;

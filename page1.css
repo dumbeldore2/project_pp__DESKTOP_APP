@@ -4,24 +4,24 @@ html {
 }
 
 .element_number {
-    font-size: 12px;
+    font-size: 0.75em;
     margin-top: 0%;
     margin-bottom: 0%;
 }
 .element_letter {
-    font-size: 48px;
+    font-size: 2.7em;
     text-align: center;
     margin-top: 0%;
     margin-bottom: 0%;
 }
 .element_name {
-    font-size: 12px;
+    font-size: 0.75em;
     text-align: center;
     margin-top: 0%;
     margin-bottom: 0%;
 }
 .element_weight {
-    font-size: 12px;
+    font-size: 0.75em;
     text-align: center;
     margin-top: 0%;
     margin-bottom: 0%;
@@ -29,8 +29,8 @@ html {
 
 .element_box {
     border-style: solid;
-    width: 80px;
-    height: 94PX;
+    width: 5em;
+    height: 5.55em;
     border-image-slice: 1;
     border-image-source: linear-gradient(#00BF8F, #001510);
 }

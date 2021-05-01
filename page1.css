@@ -15,13 +15,13 @@ html {
     margin-bottom: 0%;
 }
 .element_name {
-    font-size: 11px;
+    font-size: 12px;
     text-align: center;
     margin-top: 0%;
     margin-bottom: 0%;
 }
 .element_weight {
-    font-size: 11px;
+    font-size: 12px;
     text-align: center;
     margin-top: 0%;
     margin-bottom: 0%;
@@ -30,7 +30,7 @@ html {
 .element_box {
     border-style: solid;
     width: 80px;
-    height: 100px;
+    height: 94PX;
     border-image-slice: 1;
     border-image-source: linear-gradient(#00BF8F, #001510);
 }

@@ -548,6 +548,18 @@ html {
     margin-right: auto;
 }
 
+a:link {
+    text-decoration: none;
+}
 a:visited {
     color: black;
-  }
+    text-decoration: none;
+}
+
+a:hover {
+    color: grey;
+}
+
+a:active {
+    text-decoration: none;
+}

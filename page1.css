@@ -541,7 +541,7 @@ html {
 .grid_titel {
     grid-column: 3/13;
     grid-row: 1/4;
-    font-size: 96px;
+    font-size: 50px;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;

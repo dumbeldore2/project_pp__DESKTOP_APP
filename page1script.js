@@ -17,7 +17,7 @@ function a(a,b , c ,d){
 
     //console.log(totaal_list_a);
     //console.log(totaal_list_b);
-    //console.log(list_c[0]);
+    //console.log(list_a.length);
     //console.log(list_d[0]);
 
     if(totaal_list_a == 30){key = true};
@@ -29,5 +29,8 @@ function a(a,b , c ,d){
 function b(){
     if(key == true){
         window.open("page2.html","_self");
+    } else {
+        list_a = [];
+        list_b = [];
     }
 }

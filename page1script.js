@@ -25,3 +25,9 @@ function a(a,b , c ,d){
     if(totaal_list_b == "HeP"){key = true};
     console.log(key);
 }
+
+function b(){
+    if(key == true){
+        window.open("page2.html","_self");
+    }
+}

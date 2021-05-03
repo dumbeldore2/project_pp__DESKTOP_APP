@@ -16,8 +16,27 @@ html{
 .object{
     background: linear-gradient(90.09deg, #475993 0.08%, rgba(71, 89, 147, 0) 99.92%);
     border-radius: 75px;
+    display: grid;
+    grid-template-columns: 500px auto;
+    grid-column-gap: 50px;
+    width: 100%;
 }
 
 .object_img{
     height: 250px;
+    grid-column: 1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.object_title{
+    text-align: center;
+    grid-column: 2;
+    width: 100%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+    justify-self: center;    
 }

@@ -1,4 +1,14 @@
+html{
+    background: #E5E5E5;
+}
+
 .title_page2{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
     text-align: center;
     font-size: 96px;
+    background: -webkit-linear-gradient(-45deg, #00BF8F 0%, rgba(0, 21, 16, 0) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

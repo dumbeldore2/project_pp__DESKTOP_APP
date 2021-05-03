@@ -17,3 +17,7 @@ html{
     background: linear-gradient(90.09deg, #475993 0.08%, rgba(71, 89, 147, 0) 99.92%);
     border-radius: 75px;
 }
+
+.object_img{
+    height: 250px;
+}

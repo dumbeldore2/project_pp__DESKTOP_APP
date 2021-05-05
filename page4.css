@@ -65,6 +65,7 @@
     font-weight: normal;
     font-size: 150%;
     text-align: center;
+    margin: 5%;
 }
 
 .div_2_item2{
@@ -74,4 +75,16 @@
     font-weight: normal;
     font-size: 150%;
     text-align: center;
+    margin: 5%;
+}
+
+.add{
+    width: 75%;
+    margin-left: 12.5%;
+    background: linear-gradient(90.09deg, #475993 0.08%, rgba(71, 89, 147, 0) 99.92%);
+    border-radius: 75px;
+    font-size: 200%;
+    color: #ffffff;
+    text-align: center;
+    padding: 1%;
 }

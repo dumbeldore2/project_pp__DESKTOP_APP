@@ -35,3 +35,13 @@ input[type=text] {
       text-align: center;
       font-size: 130%;      
   }
+
+  input[type=submit]{
+      width: 75%;
+      margin-left: 12.5%;
+      font-size: 300%;      
+      padding: 2.5%;
+      border-radius: 500px;
+      border: none;
+      background: -webkit-linear-gradient(-45deg, #00BF8F 0%, rgba(0, 21, 16, 0) 100%);
+  }

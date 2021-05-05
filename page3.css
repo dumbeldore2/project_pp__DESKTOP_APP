@@ -12,3 +12,12 @@ html{
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+input[type=text] {
+    border: none;
+    border-bottom: 1px solid #00bf8f;
+    background-color: #E5E5E5;
+    width: 50%;
+    float: right;
+    margin: 5px;
+  }

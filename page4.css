@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.titel{
+    background: linear-gradient(90.09deg, #475993 0.08%, rgba(71, 89, 147, 0) 99.92%);
+    display: grid;
+    grid-template-columns: 500px auto;
+    grid-column-gap: 50px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.titel_img{
+    height: 250px;
+    grid-column: 1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.titel_title{
+    text-align: center;
+    grid-column: 2;
+    width: 100%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+    justify-self: center; 
+    margin: auto;
+}

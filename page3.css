@@ -17,7 +17,21 @@ input[type=text] {
     border: none;
     border-bottom: 1px solid #00bf8f;
     background-color: #E5E5E5;
-    width: 50%;
+    width: 100%;
     float: right;
     margin: 5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    font-size: 130%;     
+  }
+
+  label{
+      margin: 5px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      text-align: center;
+      font-size: 130%;      
   }

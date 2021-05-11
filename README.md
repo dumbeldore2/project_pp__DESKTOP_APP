@@ -5,7 +5,10 @@ https://www.youtube.com/watch?v=kN1Czs0m1SU&t=2311s
 1) om u project deftig aan te maken 
 
 npm init
+
 npm install --save electorn
+
+npm install --save mongoose
 
 ------------------------------------------------------------CHANGE-----------------------------------------------------  
 "scripts": {

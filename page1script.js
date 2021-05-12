@@ -34,3 +34,12 @@ function b(){
         list_b = [];
     }
 }
+
+function c(){
+    console.log(key);
+    require('electron').ipcRenderer.send("key",key);
+    //const { ipcRenderer } = require('electron');
+    //ipcRenderer.send("key",key);
+}
+
+//require('electron').ipcRenderer.send("key",key);

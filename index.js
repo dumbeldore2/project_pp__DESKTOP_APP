@@ -2,7 +2,7 @@ const electron = require('electron');
 const url = require('url');
 const path = require('path');
 
-const {app, BrowserWindow , Menu} = electron;
+const {app, BrowserWindow , Menu , ipcMain} = electron;
 
 let page1;
 
@@ -10,7 +10,13 @@ let page1;
 app.on('ready',function(){
     
     //Create new window
-    page1 = new BrowserWindow({});
+    page1 = new BrowserWindow({
+        webPreferences: {
+            nodeIntegration: true,
+            contextIsolation: false,
+            enableRemoteModule: true,
+        }
+    });
 
     //load html into window
     page1.loadURL(url.format({
@@ -56,4 +62,9 @@ if(process.env.NODE_ENV !== 'production'){
             }
         ]
     });
-}
+};
+
+//catch boolean
+ipcMain.on("key",function(e,item){
+    console.log(item);
+});

@@ -7,9 +7,22 @@ const connectToMongoDb = async () => {
     await mongo().then(async (Mongoose) => {
         try {
 
+            /*const lol = {
+                account: "lol",
+                date: "2jan",
+                object: "facebook",
+                email: "yago.engels@gmail.com",
+                password: "ldsk,fm,dvsd"
+            }
+            await new shema(lol).save()
+            */
+
+
             const dbData = await shema.find({});
-            //console.log(object.date)
+            console.log(dbData)
             console.log(dbData.slice(-1).length)
+            //console.log(dbData.slice(-1)[0].object)
+            //console.log(dbData.slice(-1)[0].date)
 
             //list.naam = dbData.slice(-1)[0].naam;
             //list.date = dbData.slice(-1)[0].date;

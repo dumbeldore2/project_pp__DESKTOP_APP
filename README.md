@@ -6,6 +6,12 @@ https://www.youtube.com/watch?v=kN1Czs0m1SU&t=2311s
 dit zijn de titorials die helpen bij het conecteren naar de mongodb
 https://www.youtube.com/playlist?list=PLaxxQQak6D_dHXuCYHwgyHwhs225vUX6d
 
+dit is een belangrijke website voor als je een require error krijgt in u html scripts
+https://stackoverflow.com/questions/55093700/electron-5-0-0-uncaught-referenceerror-require-is-not-defined
+gebruik deze drie ook momenteel werken deze bij electron boven de 12
+            nodeIntegration: true,
+            contextIsolation: false,
+            enableRemoteModule: true,
 
 1) om u project deftig aan te maken 
 

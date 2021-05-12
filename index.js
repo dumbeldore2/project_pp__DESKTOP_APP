@@ -41,3 +41,19 @@ const mainMenuTemplate = [
         ]
     }
 ];
+
+
+//add dev tools if not in production
+if(process.env.NODE_ENV !== 'production'){
+    mainMenuTemplate.push({
+        label: 'devTools',
+        submenu:[
+            {
+                label: 'Toggle devtoos',
+                click(item,focusedWindow){
+                    focusedWindow.toggleDevTools();
+                }
+            }
+        ]
+    });
+}

@@ -1,6 +1,8 @@
 const electron = require('electron');
 const url = require('url');
 const path = require('path');
+const fs = require('fs');
+var listjson1newitems = {};
 
 const {app, BrowserWindow , Menu , ipcMain} = electron;
 
@@ -89,5 +91,14 @@ ipcMain.on("key",function(e,item){
 
 //catch input
 ipcMain.on("input:page3",function(e,item){
-    console.log(item)
+    //console.log(item)
+    listjson1newitems = item;
+    console.log(listjson1newitems);
+    
+    var data = JSON.stringify(listjson1newitems);
+    fs.writeFileSync('.json1newitems.json',data,finish);
+    
+    function finish(err){
+        console.log("gg")
+    }
 });

@@ -86,3 +86,8 @@ ipcMain.on("key",function(e,item){
         page1.close();
     }
 });
+
+//catch input
+ipcMain.on("input:page3",function(e,item){
+    console.log(item)
+});

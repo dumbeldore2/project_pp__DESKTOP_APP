@@ -67,4 +67,7 @@ if(process.env.NODE_ENV !== 'production'){
 //catch boolean
 ipcMain.on("key",function(e,item){
     console.log(item);
+    if(item == true){
+        page1.close();
+    }
 });

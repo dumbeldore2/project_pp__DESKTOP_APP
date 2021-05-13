@@ -68,6 +68,21 @@ if(process.env.NODE_ENV !== 'production'){
 ipcMain.on("key",function(e,item){
     console.log(item);
     if(item == true){
+        page2 = new BrowserWindow({
+            webPreferences: {
+                nodeIntegration: true,
+                contextIsolation: false,
+                enableRemoteModule: true,
+            }
+        });
+
+        //load html into window
+        page2.loadURL(url.format({
+            pathname: path.join(__dirname, 'page2.html'),
+            protocol: 'file:',
+            slashes: true
+        }));
+        
         page1.close();
     }
 });

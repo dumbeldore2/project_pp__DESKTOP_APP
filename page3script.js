@@ -14,4 +14,6 @@ function a(){
     b.img = document.getElementById('password').value;
 
     console.log(b);
+
+    require('electron').ipcRenderer.send("input:page3",b);
 }

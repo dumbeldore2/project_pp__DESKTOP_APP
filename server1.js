@@ -2,6 +2,11 @@ const Mongoose = require('mongoose')
 const mongo = require('./server2')
 const shema = require('./shema1')
 
+const fs = require('fs');
+var data = fs.readFileSync('./json2dbitmes.json');
+var json2 = {};
+json2 = JSON.parse(data);
+
 
 const connectToMongoDb = async () => {
     await mongo().then(async (Mongoose) => {
@@ -19,8 +24,9 @@ const connectToMongoDb = async () => {
 
 
             const dbData = await shema.find({});
-            console.log(dbData)
-            console.log(dbData.slice(-1).length)
+            console.log(dbData);
+            console.log(json2.length);
+            console.log(Object.keys(json2).length);
             //console.log(dbData.slice(-1)[0].object)
             //console.log(dbData.slice(-1)[0].date)
 

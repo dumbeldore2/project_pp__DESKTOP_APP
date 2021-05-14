@@ -1,4 +1,5 @@
 const electron = require('electron');
+const server = require('./server1');
 const url = require('url');
 const path = require('path');
 const fs = require('fs');

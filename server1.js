@@ -24,9 +24,16 @@ const connectToMongoDb = async () => {
 
 
             const dbData = await shema.find({});
-            console.log(dbData);
-            console.log(json2.length);
-            console.log(Object.keys(json2).length);
+            //console.log(dbData);
+            //console.log(Object.keys(json2).length);
+
+            if(dbData.length != Object.keys(json2).length){
+                console.log("de tities dont equal the assies");
+                json2 = dbData;
+                console.log(json2);
+            } else {
+                console.log("hehehehe");
+            }
             //console.log(dbData.slice(-1)[0].object)
             //console.log(dbData.slice(-1)[0].date)
 

@@ -35,6 +35,13 @@ const connectToMongoDb = async () => {
                 fs.writeFileSync('json2dbitems.json',json2data,finish);
             } else {
                 console.log("hehehehe");
+
+                if(dbData != json2){
+                    json2 = dbData;
+
+                    var json2data = JSON.stringify(json2);
+                    fs.writeFileSync('json2dbitems.json',json2data,finish);
+                }
             }
             //console.log(dbData.slice(-1)[0].object)
             //console.log(dbData.slice(-1)[0].date)

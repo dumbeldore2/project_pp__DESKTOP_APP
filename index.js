@@ -96,7 +96,7 @@ ipcMain.on("input:page3",function(e,item){
     console.log(listjson1newitems);
     
     var data = JSON.stringify(listjson1newitems);
-    fs.writeFileSync('.json1newitems.json',data,finish);
+    fs.writeFileSync('json1newitems.json',data,finish);
     
     function finish(err){
         console.log("gg")

@@ -3,7 +3,7 @@ const mongo = require('./server2')
 const shema = require('./shema1')
 
 const fs = require('fs');
-var data = fs.readFileSync('./json2dbitmes.json');
+var data = fs.readFileSync('./json2dbitems.json');
 var json2 = {};
 json2 = JSON.parse(data);
 
@@ -30,7 +30,9 @@ const connectToMongoDb = async () => {
             if(dbData.length != Object.keys(json2).length){
                 console.log("de tities dont equal the assies");
                 json2 = dbData;
-                console.log(json2);
+
+                var json2data = JSON.stringify(json2);
+                fs.writeFileSync('json2dbitems.json',json2data,finish);
             } else {
                 console.log("hehehehe");
             }

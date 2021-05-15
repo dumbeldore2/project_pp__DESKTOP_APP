@@ -7,4 +7,12 @@ var data = fs.readFileSync('./json1newitems.json');
 var json1 = {};
 json1 = JSON.parse(data);
 
+var list = {};
+list.account = "account1";
+list.date = "een random datum";
+list.object = json1.naam;
+list.email = json1.email;
+list.password = json1.password;
+
 console.log(json1);
+console.log(list);

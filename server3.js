@@ -45,6 +45,8 @@ if(Object.keys(json1).length == 0){
                 var list2 = {};
                 var json1_2 = JSON.stringify(list2);
                 fs.writeFileSync('json1newitems.json',json1_2,finish);
+                
+                require('./server1');
 
                 function finish(err){
                     console.log("gg")

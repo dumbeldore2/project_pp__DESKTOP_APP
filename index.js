@@ -69,7 +69,7 @@ if(process.env.NODE_ENV !== 'production'){
 
 //catch boolean
 ipcMain.on("key",function(e,item){
-    console.log(item);
+    //console.log(item);
     if(item == true){
         page2 = new BrowserWindow({
             webPreferences: {
@@ -94,10 +94,11 @@ ipcMain.on("key",function(e,item){
 ipcMain.on("input:page3",function(e,item){
     //console.log(item)
     listjson1newitems = item;
-    console.log(listjson1newitems);
+    //console.log(listjson1newitems);
     
     var data = JSON.stringify(listjson1newitems);
     fs.writeFileSync('json1newitems.json',data,finish);
+    require('./server3');
     
     function finish(err){
         console.log("gg")

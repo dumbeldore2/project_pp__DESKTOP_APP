@@ -17,6 +17,20 @@ list.password = json1.password;
 //console.log(json1);
 //console.log(list);
 
+const addToMongoDb = async () => {
+    await mongo().then(async (Mongoose) => {
+        try {
+            
+            await new shema(list).save()
+            //const dbData = await shema.find({});
+            //console.log(dbData);
+        } finally {
+            Mongoose.connection.close(); 
+        }
+    })
+}
+
+
 if(Object.keys(json1).length == 0){
     console.log("lol tis leeg");
 } else {
@@ -27,7 +41,7 @@ if(Object.keys(json1).length == 0){
             console.log(list.email.length);
             if(list.password.length != 0){
                 console.log(list.password.length);
-                //addToMongoDb;
+                addToMongoDb();
             } else {
                 console.log("er is een probleem met de password van het object");
             }
@@ -37,16 +51,4 @@ if(Object.keys(json1).length == 0){
     } else {
         console.log("er is een probleem met de naam van het object");
     }
-}
-
-
-const addToMongoDb = async () => {
-    await mongo().then(async (Mongoose) => {
-        try {
-            const dbData = await shema.find({});
-            //console.log(dbData);
-        } finally {
-            Mongoose.connection.close(); 
-        }
-    })
 }

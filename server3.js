@@ -21,6 +21,11 @@ if(Object.keys(json1).length == 0){
     console.log("lol tis leeg");
 } else {
     console.log("lol tis ni leeg");
+    if(list.object.length != 0){
+        console.log(list.object.length);
+    } else {
+        console.log("er is een probleem met de naam van het object");
+    }
 }
 
 
@@ -28,7 +33,7 @@ const connectToMongoDb = async () => {
     await mongo().then(async (Mongoose) => {
         try {
             const dbData = await shema.find({});
-            console.log(dbData);
+            //console.log(dbData);
         } finally {
             Mongoose.connection.close(); 
         }

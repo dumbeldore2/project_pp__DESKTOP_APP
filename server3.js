@@ -42,6 +42,13 @@ if(Object.keys(json1).length == 0){
             if(list.password.length != 0){
                 console.log(list.password.length);
                 addToMongoDb();
+                var list2 = {};
+                var json1_2 = JSON.stringify(list2);
+                fs.writeFileSync('json1newitems.json',json1_2,finish);
+
+                function finish(err){
+                    console.log("gg")
+                }
             } else {
                 console.log("er is een probleem met de password van het object");
             }

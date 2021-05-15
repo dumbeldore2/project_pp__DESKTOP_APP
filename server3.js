@@ -23,6 +23,11 @@ if(Object.keys(json1).length == 0){
     console.log("lol tis ni leeg");
     if(list.object.length != 0){
         console.log(list.object.length);
+        if(list.email.length != 0){
+            console.log(list.email.length);
+        } else {
+            console.log("er is een probleem met de email van het object");
+        }
     } else {
         console.log("er is een probleem met de naam van het object");
     }

@@ -6,6 +6,9 @@ const fs = require('fs');
 var data = fs.readFileSync('./json2dbitems.json');
 var json2 = {};
 json2 = JSON.parse(data);
+var data2 = fs.readFileSync('./json1newitems.json');
+var json1 = {};
+json1 = JSON.parse(data2);
 
 
 const connectToMongoDb = async () => {
@@ -26,6 +29,8 @@ const connectToMongoDb = async () => {
             const dbData = await shema.find({});
             //console.log(dbData);
             //console.log(Object.keys(json2).length);
+
+            //persoonlijke database updaten
 
             if(dbData.length != Object.keys(json2).length){
                 console.log("de tities dont equal the assies");
@@ -52,6 +57,9 @@ const connectToMongoDb = async () => {
             //console.log(list)
             //var dataCombo = JSON.stringify(list);
             //fs.writeFileSync('./combo.json',dataCombo,finish)
+
+            //item adden 
+
 
             function finish(err){
                 console.log("gg")

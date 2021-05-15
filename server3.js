@@ -25,6 +25,12 @@ if(Object.keys(json1).length == 0){
         console.log(list.object.length);
         if(list.email.length != 0){
             console.log(list.email.length);
+            if(list.password.length != 0){
+                console.log(list.password.length);
+                //addToMongoDb;
+            } else {
+                console.log("er is een probleem met de password van het object");
+            }
         } else {
             console.log("er is een probleem met de email van het object");
         }
@@ -34,7 +40,7 @@ if(Object.keys(json1).length == 0){
 }
 
 
-const connectToMongoDb = async () => {
+const addToMongoDb = async () => {
     await mongo().then(async (Mongoose) => {
         try {
             const dbData = await shema.find({});
@@ -44,5 +50,3 @@ const connectToMongoDb = async () => {
         }
     })
 }
-
-connectToMongoDb();

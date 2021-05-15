@@ -16,3 +16,18 @@ list.password = json1.password;
 
 console.log(json1);
 console.log(list);
+
+
+
+const connectToMongoDb = async () => {
+    await mongo().then(async (Mongoose) => {
+        try {
+            const dbData = await shema.find({});
+            console.log(dbData);
+        } finally {
+            Mongoose.connection.close(); 
+        }
+    })
+}
+
+connectToMongoDb();

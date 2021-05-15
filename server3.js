@@ -14,9 +14,14 @@ list.object = json1.naam;
 list.email = json1.email;
 list.password = json1.password;
 
-console.log(json1);
-console.log(list);
+//console.log(json1);
+//console.log(list);
 
+if(Object.keys(json1).length == 0){
+    console.log("lol tis leeg");
+} else {
+    console.log("lol tis ni leeg");
+}
 
 
 const connectToMongoDb = async () => {

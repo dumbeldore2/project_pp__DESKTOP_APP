@@ -4,6 +4,11 @@ const url = require('url');
 const path = require('path');
 const fs = require('fs');
 var listjson1newitems = {};
+var data = fs.readFileSync('./json2dbitems.json');
+var json2 = {};
+json2 = JSON.parse(data);
+
+
 
 const {app, BrowserWindow , Menu , ipcMain} = electron;
 
@@ -94,13 +99,21 @@ ipcMain.on("key",function(e,item){
 ipcMain.on("input:page3",function(e,item){
     //console.log(item)
     listjson1newitems = item;
-    //console.log(listjson1newitems);
+    console.log(listjson1newitems);
     
     var data = JSON.stringify(listjson1newitems);
     fs.writeFileSync('json1newitems.json',data,finish);
     require('./server3');
+    require('./server1');
     
     function finish(err){
         console.log("gg")
     }
 });
+
+//random functie die de objecten in een list zet 
+function fun_a(){
+    console.log(json2);
+}
+
+fun_a();

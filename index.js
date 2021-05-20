@@ -2,11 +2,15 @@ const electron = require('electron');
 const server = require('./server1');
 const url = require('url');
 const path = require('path');
+
 const fs = require('fs');
 var listjson1newitems = {};
+
 var data = fs.readFileSync('./json2dbitems.json');
 var json2 = {};
 json2 = JSON.parse(data);
+
+var final_object = [];
 
 
 
@@ -113,7 +117,13 @@ ipcMain.on("input:page3",function(e,item){
 
 //random functie die de objecten in een list zet 
 function fun_a(){
-    console.log(json2);
+    //console.log(json2);
+    //console.log(json2[0].account); klein testje
+
+    for(i = 0 ; i < Object.keys(json2).length; i++){
+        final_object[i] = json2[i].object;
+    }
+    console.log(final_object);
 }
 
 fun_a();

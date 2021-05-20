@@ -76,6 +76,20 @@ if(process.env.NODE_ENV !== 'production'){
     });
 };
 
+
+//random functie die de objecten in een list zet 
+function fun_a(){
+    //console.log(json2);
+    //console.log(json2[0].account); klein testje
+
+    for(i = 0 ; i < Object.keys(json2).length; i++){
+        final_object[i] = json2[i].object;
+    }
+    console.log(final_object);
+}
+
+fun_a();
+
 //catch boolean
 ipcMain.on("key",function(e,item){
     //console.log(item);
@@ -94,6 +108,10 @@ ipcMain.on("key",function(e,item){
             protocol: 'file:',
             slashes: true
         }));
+        
+        page2.webContents.on('did-finish-load', () => {
+            page2.webContents.send('final_object',final_object);
+        })
         
         page1.close();
     }
@@ -114,16 +132,3 @@ ipcMain.on("input:page3",function(e,item){
         console.log("gg")
     }
 });
-
-//random functie die de objecten in een list zet 
-function fun_a(){
-    //console.log(json2);
-    //console.log(json2[0].account); klein testje
-
-    for(i = 0 ; i < Object.keys(json2).length; i++){
-        final_object[i] = json2[i].object;
-    }
-    console.log(final_object);
-}
-
-fun_a();
